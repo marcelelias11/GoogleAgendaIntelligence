@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 97%;
+    --foreground: 220 6% 10%;
+    
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 6% 10%;
+    --sidebar-primary: 217 89% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 97%;
+    --sidebar-accent-foreground: 220 6% 10%;
+    --sidebar-border: 0 0% 91%;
+    --sidebar-ring: 217 89% 50%;
+    
+    --primary: 217 89% 50%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 135 50% 43%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --tertiary: 40 100% 50%;
+    --tertiary-foreground: 0 0% 0%;
+    
+    --destructive: 4 90% 56%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 220 6% 10%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 6% 10%;
+    
+    --muted: 0 0% 97%;
+    --muted-foreground: 215 5% 39%;
+    
+    --accent: 0 0% 97%;
+    --accent-foreground: 220 6% 10%;
+    
+    --border: 0 0% 91%;
+    --input: 0 0% 91%;
+    --ring: 217 89% 50%;
+    
+    --radius: 0.5rem;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* Material Icons */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
